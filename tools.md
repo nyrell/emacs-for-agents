@@ -168,8 +168,10 @@ test ran, which usually means a wrong file or selector.
 
 ## Tests of the tool
 
+From the root of this repository:
+
 ```sh
-$T -L emacs-for-agents/tools test emacs-for-agents/tools/elisp-agent-test.el
+tools/elisp-agent -L tools test tools/elisp-agent-test.el
 ```
 
 ## Giving the tool to a model

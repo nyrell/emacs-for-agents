@@ -3,8 +3,8 @@
 Practical notes for AI agents (and the people running them) that write Emacs
 Lisp. Start here; each topic has its own file with the details.
 
-**Run every command from the project root**, with this folder copied into
-the project. The tool is `emacs-for-agents/tools/elisp-agent`; it is not on
+**Run every command from the project root**, with this repository in the
+project as `emacs-for-agents/`. The tool is `emacs-for-agents/tools/elisp-agent`; it is not on
 `PATH`, so always type that path. Target Emacs 29 or newer unless the
 project says otherwise.
 
@@ -72,7 +72,17 @@ $T -L . test test/mypkg-test.el     # run ERT
 
 ## Use it in a project
 
-This README is the entry point; no other instruction file is needed. Copy the
-folder into the project and tell the agent:
+This README is the entry point; no other instruction file is needed. Put
+this repository into the project root as `emacs-for-agents/`, by cloning
+it there (add it to `.gitignore`), as a git submodule, or as a symbolic
+link to one shared clone:
+
+```sh
+git clone URL emacs-for-agents
+git submodule add URL emacs-for-agents
+ln -s ../emacs-for-agents emacs-for-agents
+```
+
+Then tell the agent:
 
 > Read emacs-for-agents/README.md and follow it.

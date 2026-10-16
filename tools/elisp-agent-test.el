@@ -2,9 +2,8 @@
 
 ;;; Commentary:
 
-;; Run the tests from the repository root with:
-;; `emacs --batch -Q -L emacs-for-agents/tools
-;;    -l emacs-for-agents/tools/elisp-agent-test.el -f ert-run-tests-batch-and-exit'
+;; Run the tests from the root of the emacs-for-agents repository with:
+;; `tools/elisp-agent -L tools test tools/elisp-agent-test.el'
 
 ;;; Code:
 
