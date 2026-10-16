@@ -72,15 +72,13 @@ $T -L . test test/mypkg-test.el     # run ERT
 
 ## Use it in a project
 
-This README is the entry point; no other instruction file is needed. Put
-this repository into the project root as `emacs-for-agents/`, by cloning
-it there (add it to `.gitignore`), as a git submodule, or as a symbolic
-link to one shared clone:
+This README is the entry point; no other instruction file is needed. Make
+it available in the project root as `emacs-for-agents/`: copy it there, or
+link to your clone (and add `emacs-for-agents` to the project's
+`.gitignore`):
 
 ```sh
-git clone URL emacs-for-agents
-git submodule add URL emacs-for-agents
-ln -s ../emacs-for-agents emacs-for-agents
+ln -s /path/to/emacs-for-agents emacs-for-agents
 ```
 
 Then tell the agent:
