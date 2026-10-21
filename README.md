@@ -38,7 +38,11 @@ project says otherwise.
 7. **Verify in steps.** Batch checks first, then a clean `emacs -Q`, then a
    real Emacs, without disturbing the user's own session. Never change the
    user's Emacs configuration. → [verification.md](verification.md)
-8. **Small models: smaller steps.** One form per edit, a check after each, and
+8. **Keep scratch files in a temporary directory.** Probe scripts, test
+   data and other throwaway files go in a directory made with `mktemp -d`
+   (or `make-temp-file`), never in the project or any other real
+   directory, unless you have been given a directory of your own for them.
+9. **Small models: smaller steps.** One form per edit, a check after each, and
    a hard limit on retries. → [small-models.md](small-models.md)
 
 Work is done only when `check` and `test` pass, and you show their output.
