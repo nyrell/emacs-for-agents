@@ -1,7 +1,9 @@
 # Emacs Lisp for coding agents
 
 Practical notes for AI agents (and the people running them) that write Emacs
-Lisp. Start here; each topic has its own file with the details.
+Lisp. Mainly intended as help for weaker models but others might benefit too. Written using Opus 5.5.
+
+Start here; each topic has its own file with the details.
 
 **Run every command from the project root**, with this repository in the
 project as `emacs-for-agents/`. The tool is `emacs-for-agents/tools/elisp-agent`; it is not on
@@ -94,3 +96,7 @@ ln -s /path/to/emacs-for-agents emacs-for-agents
 Then tell the agent:
 
 > Read emacs-for-agents/README.md and follow it.
+
+## License
+
+Public domain. See [UNLICENSE](UNLICENSE).
